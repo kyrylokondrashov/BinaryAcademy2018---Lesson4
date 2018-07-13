@@ -53,7 +53,55 @@ namespace PL.Controllers
 
         }
 
-        //DELETE aircraftsModel/id
+        //GET: /aircraftsModel/:id/aircraftTypeModel
+        [HttpGet("{id}/aircraftTypeModel")]
+        public string GetModel(int id)
+        {
+            try
+            {
+                var crew = (aircratsModelsService.GetById(id)).ModelName;
+                return $"Aircraft model name is {crew}.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircraftsModel/:id/places
+        [HttpGet("{id}/places")]
+        public string GetPlaces(int id)
+        {
+            try
+            {
+                var crew = (aircratsModelsService.GetById(id)).PlacesCount;
+                return $"Aircraft model has {crew} seats.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircraftsModel/:id/weight
+        [HttpGet("{id}/weight")]
+        public string GetWeight(int id)
+        {
+            try
+            {
+                var crew = (aircratsModelsService.GetById(id)).AircraftTonnage;
+                return $"Aircraft model wieght is {crew}.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //DELETE aircraftsModel
         [HttpDelete("{id}")]
         public string Delete(int id)
         {

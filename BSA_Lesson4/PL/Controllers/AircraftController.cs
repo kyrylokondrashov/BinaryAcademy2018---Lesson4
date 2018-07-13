@@ -17,11 +17,11 @@ using Newtonsoft.Json;
 namespace PL.Controllers
 {
     [Route("/aircrafts")]
-    public class AircratsController : Controller
+    public class aircratController : Controller
     {
         IService<AircraftsDTO> crewService;
 
-        public AircratsController(IService<AircraftsDTO> serv)
+        public aircratController(IService<AircraftsDTO> serv)
         {
             crewService = serv;
         }
@@ -45,6 +45,70 @@ namespace PL.Controllers
                 var crew = crewService.GetById(id);
                 string res = JsonConvert.SerializeObject(crew);
                 return res;
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircrafts/:id/name
+        [HttpGet("{id}/weight")]
+        public string GetName(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).AircraftName;
+                return $"Aircraft name is {crew}.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircrafts/:id/type
+        [HttpGet("{id}/type")]
+        public string GetType(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).CurrentModelId;
+                return $"Aircraft model has number {crew}. More details at aircraftsModel/:id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircrafts/:id/date
+        [HttpGet("{id}/date")]
+        public string GetDate(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).AircraftBuildDate;
+                return $"Aircraft was built at {crew}.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /aircraftsModel/:id/life
+        [HttpGet("{id}/life")]
+        public string GetWeight(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).AircraftExpluatationSpan;
+                return $"Aircraft has expluatation span {crew}.";
             }
             catch (Exception e)
             {

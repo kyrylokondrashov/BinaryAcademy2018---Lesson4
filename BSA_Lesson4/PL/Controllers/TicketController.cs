@@ -54,6 +54,36 @@ namespace PL.Controllers
 
         }
 
+        //GET: /ticket/:id/price
+        [HttpGet("{id}/price")]
+        public string GetPrice(int id)
+        {
+            try
+            {
+                var ticket = (ticketService.GetById(id)).Price;
+                return $"This ticket has price {ticket}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+        }
+
+        //GET: /ticket/:id/flightId
+        [HttpGet("{id}/flightId")]
+        public string GetFlight(int id)
+        {
+            try
+            {
+                var ticket = (ticketService.GetById(id)).FlightId;
+                return $"This ticket has Aircraft Id {ticket}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+        }
+
         //DELETE ticket/id
         [HttpDelete("{id}")]
         public string Delete(int id)

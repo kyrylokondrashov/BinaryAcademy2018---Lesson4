@@ -53,6 +53,86 @@ namespace PL.Controllers
 
         }
 
+        //GET: /flights/:id/PointOfDeparture
+        [HttpGet("{id}/pointOfDeparture")]
+        public string GetPointOfDeparture(int id)
+        {
+            try
+            {
+                var flight = (flightService.GetById(id)).PointOfDepartures;
+                return $"This flight leaves from {flight}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        // GET /flights/:id/timeOfDeparture
+        [HttpGet("{id}/timeOfDeparture")]
+        public string GetTimeDepart(int id)
+        {
+            try
+            {
+                var flight = (flightService.GetById(id)).TimeOfDeparture;
+                return $"This flight leaves at {flight}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        // GET /flights/:id/pointOfDestination
+        [HttpGet("{id}/pointOfDestination")]
+        public string GetPointOfDestination(int id)
+        {
+            try
+            {
+                var flight = (flightService.GetById(id)).PointOfDepartures;
+                return $"This flight arrives to {flight}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        // GET /flights/:id/timeOfArrival
+        [HttpGet("{id}/timeOfArrival")]
+        public string GetTimeArrival(int id)
+        {
+            try
+            {
+                var flight = (flightService.GetById(id)).TimeOfArrival;
+                return $"This flight arrives at {flight}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        // GET /flights/:id/tickets
+        [HttpGet("{id}/tickets")]
+        public string GetTickets(int id)
+        {
+            try
+            {
+                var flight = (flightService.GetById(id)).TimeOfArrival;
+                return $"This flight has current tickets {flight}. More details at /ticket/:id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
         //DELETE flights/id
         [HttpDelete("{id}")]
         public string Delete(int id)

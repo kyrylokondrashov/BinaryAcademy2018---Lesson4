@@ -53,6 +53,71 @@ namespace PL.Controllers
 
         }
 
+
+        //GET: /departures/:id/flight
+        [HttpGet("{id}")]
+        public string GetFlight(int id)
+        {
+            try
+            {
+                var crew = (departureService.GetById(id)).FlightID;
+                return $"Departure by flight with id {crew}. More information at /flight/:id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /departures/:id/dateOfDeparture
+        [HttpGet("{id}/dateOfDeparture")]
+        public string GetDoD(int id)
+        {
+            try
+            {
+                var crew = (departureService.GetById(id)).DepartureDate;
+                return $"Departure at {crew}.";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /departures/:id/crew
+        [HttpGet("{id}/crew")]
+        public string GetCrewId(int id)
+        {
+            try
+            {
+                var crew = (departureService.GetById(id)).CrewId;
+                return $"Departure has {crew}. More information at crew/id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /departures/:id/aircraft
+        [HttpGet("{id}/")]
+        public string GetAircraftId(int id)
+        {
+            try
+            {
+                var crew = (departureService.GetById(id)).AircraftId;
+                return $"Departure by aircraft {crew}. More information at aircraft/id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
         //DELETE departures/id
         [HttpDelete("{id}")]
         public string Delete(int id)
