@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL", "PL\PL.csproj", "{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{47DBB9F3-3A63-41DA-A007-6D00FAECBE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{399BE64A-6726-417A-8251-DBFF5AAA0199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5A53B678-C6FE-46D5-9E3C-C3D21A437E2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}.Release|x86.Build.0 = Release|Any CPU
+		{47DBB9F3-3A63-41DA-A007-6D00FAECBE22}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47DBB9F3-3A63-41DA-A007-6D00FAECBE22}.Debug|x86.Build.0 = Debug|Any CPU
+		{47DBB9F3-3A63-41DA-A007-6D00FAECBE22}.Release|x86.ActiveCfg = Release|Any CPU
+		{47DBB9F3-3A63-41DA-A007-6D00FAECBE22}.Release|x86.Build.0 = Release|Any CPU
+		{399BE64A-6726-417A-8251-DBFF5AAA0199}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{399BE64A-6726-417A-8251-DBFF5AAA0199}.Debug|x86.Build.0 = Debug|Any CPU
+		{399BE64A-6726-417A-8251-DBFF5AAA0199}.Release|x86.ActiveCfg = Release|Any CPU
+		{399BE64A-6726-417A-8251-DBFF5AAA0199}.Release|x86.Build.0 = Release|Any CPU
+		{5A53B678-C6FE-46D5-9E3C-C3D21A437E2A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5A53B678-C6FE-46D5-9E3C-C3D21A437E2A}.Debug|x86.Build.0 = Debug|Any CPU
+		{5A53B678-C6FE-46D5-9E3C-C3D21A437E2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5A53B678-C6FE-46D5-9E3C-C3D21A437E2A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

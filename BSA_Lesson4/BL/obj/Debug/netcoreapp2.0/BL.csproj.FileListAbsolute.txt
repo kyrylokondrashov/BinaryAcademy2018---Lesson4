@@ -1,0 +1,13 @@
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/BL.deps.json
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/BL.dll
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/BL.pdb
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.csprojResolveAssemblyReference.cache
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.csproj.CoreCompileInputs.cache
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.AssemblyInfoInputs.cache
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.AssemblyInfo.cs
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.dll
+/Users/kirill/Projects/BSA_Lesson4/BL/obj/Debug/netcoreapp2.0/BL.pdb
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/Common.dll
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/Common.pdb
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/DAL.dll
+/Users/kirill/Projects/BSA_Lesson4/BL/bin/Debug/netcoreapp2.0/DAL.pdb

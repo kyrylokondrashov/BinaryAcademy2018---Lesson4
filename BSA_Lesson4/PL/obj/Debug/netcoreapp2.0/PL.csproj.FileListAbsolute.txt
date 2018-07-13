@@ -1,0 +1,17 @@
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/PL.deps.json
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/PL.runtimeconfig.json
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/PL.runtimeconfig.dev.json
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/PL.dll
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/PL.pdb
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/BL.dll
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/Common.dll
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/BL.pdb
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/Common.pdb
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.csprojResolveAssemblyReference.cache
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.csproj.CoreCompileInputs.cache
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.AssemblyInfoInputs.cache
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.AssemblyInfo.cs
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.dll
+/Users/kirill/Projects/BSA_Lesson4/PL/obj/Debug/netcoreapp2.0/PL.pdb
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/DAL.dll
+/Users/kirill/Projects/BSA_Lesson4/PL/bin/Debug/netcoreapp2.0/DAL.pdb
