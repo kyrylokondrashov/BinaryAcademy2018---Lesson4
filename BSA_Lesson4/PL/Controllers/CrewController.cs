@@ -53,6 +53,38 @@ namespace PL.Controllers
 
         }
 
+        //GET: /crew/:id/pilot
+        [HttpGet("{id}")]
+        public string GetPilot(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).PilotId;
+                return $"Crew has pilot {crew}. More information at pilot/id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /crew/:id
+        [HttpGet("{id}")]
+        public string GetStewardess(int id)
+        {
+            try
+            {
+                var crew = (crewService.GetById(id)).StewardessList;
+                return $"Crew has stewardesses {crew}. More information at stewardess/id";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
         //DELETE crew/id
         [HttpDelete("{id}")]
         public string Delete(int id)

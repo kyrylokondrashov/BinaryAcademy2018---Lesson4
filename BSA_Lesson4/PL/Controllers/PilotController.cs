@@ -53,6 +53,70 @@ namespace PL.Controllers
 
         }
 
+        //GET: /pilot/:id/name
+        [HttpGet("{id}/name")]
+        public string GetName(int id)
+        {
+            try
+            {
+                var pilot = (pilotService.GetById(id)).Name;
+                return $"This pilot has name {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /pilot/:id/surname
+        [HttpGet("{id}/surname")]
+        public string GetSurname(int id)
+        {
+            try
+            {
+                var pilot = (pilotService.GetById(id)).Surname;
+                return $"This pilot has surname {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /pilot/:id/date
+        [HttpGet("{id}/surname")]
+        public string GetDate(int id)
+        {
+            try
+            {
+                var pilot = (pilotService.GetById(id)).DateOfBirth;
+                return $"This pilot has date of birtth {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /pilot/:id/experience
+        [HttpGet("{id}/experience")]
+        public string GetExperience(int id)
+        {
+            try
+            {
+                var pilot = (pilotService.GetById(id)).Experience;
+                return $"This pilot has experience {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
         //DELETE pilot/id
         [HttpDelete("{id}")]
         public string Delete(int id)

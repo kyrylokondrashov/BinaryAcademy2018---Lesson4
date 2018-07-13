@@ -36,6 +36,54 @@ namespace PL.Controllers
             return res;
         }
 
+        //GET: /stewadress/:id/name
+        [HttpGet("{id}/name")]
+        public string GetName(int id)
+        {
+            try
+            {
+                var pilot = (stewadressService.GetById(id)).Name;
+                return $"This pilot has name {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /stewadress/:id/surname
+        [HttpGet("{id}/surname")]
+        public string GetSurname(int id)
+        {
+            try
+            {
+                var pilot = (stewadressService.GetById(id)).Surname;
+                return $"This pilot has surname {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
+        //GET: /stewadress/:id/date
+        [HttpGet("{id}/date")]
+        public string GetDate(int id)
+        {
+            try
+            {
+                var pilot = (stewadressService.GetById(id)).DateOfBirth;
+                return $"This pilot has date of birtth {pilot}";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+        }
+
         //GET: /stewadress/:id
         [HttpGet("{id}")]
         public string Get(int id)
