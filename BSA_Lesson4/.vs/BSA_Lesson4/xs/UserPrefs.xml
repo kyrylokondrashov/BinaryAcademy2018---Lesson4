@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{AA243BA0-66A7-48A9-9C71-F8F5844D17D7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PL/Controllers/StewardessController.cs">
+    <Files>
+      <File FileName="BL/Services/PilotsService.cs" Line="24" Column="1" />
+      <File FileName="PL/Startup.cs" Line="57" Column="17" />
+      <File FileName="BL/Services/FlightsService.cs" Line="23" Column="14" />
+      <File FileName="PL/Controllers/FlightsController.cs" Line="104" Column="23" />
+      <File FileName="PL/Controllers/AircraftController.cs" Line="103" Column="25" />
+      <File FileName="PL/Controllers/AircraftModelController.cs" Line="20" Column="32" />
+      <File FileName="PL/Controllers/CrewController.cs" Line="1" Column="1" />
+      <File FileName="PL/Controllers/DeparturesController.cs" Line="22" Column="49" />
+      <File FileName="PL/Controllers/PilotController.cs" Line="108" Column="51" />
+      <File FileName="PL/Controllers/StewardessController.cs" Line="107" Column="51" />
+      <File FileName="PL/Controllers/TicketController.cs" Line="85" Column="12" />
+      <File FileName="PL/Controllers/HomeController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BSA_Lesson4" expanded="True">
+            <Node name="BL" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="Common" expanded="True">
+              <Node name="DTO" expanded="True" />
+            </Node>
+            <Node name="PL" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="StewardessController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.PL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
